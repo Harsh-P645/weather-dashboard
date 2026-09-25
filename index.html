@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weather Dashboard</title>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="wrap">
+  <h1>Weather Dashboard</h1>
+  <p class="tag">Live conditions and a 5-day outlook, anywhere in the world.</p>
+  <form id="searchForm">
+    <input type="text" id="cityInput" placeholder="Search a city…" autocomplete="off" required>
+    <button type="submit">Search</button>
+  </form>
+  <div class="status" id="status">Try "Pune" or "Tokyo" to get started.</div>
+
+  <div class="card" id="card">
+    <p class="loc" id="loc"></p>
+    <div class="now">
+      <div class="temp" id="temp"></div>
+      <div class="desc" id="desc"></div>
+    </div>
+    <div class="grid">
+      <div class="stat"><div class="k">Feels like</div><div class="v" id="feels"></div></div>
+      <div class="stat"><div class="k">Humidity</div><div class="v" id="hum"></div></div>
+      <div class="stat"><div class="k">Wind</div><div class="v" id="wind"></div></div>
+    </div>
+    <div class="days" id="days"></div>
+  </div>
+</div>
+<script src="page.js"></script>
+</body>
+</html>
